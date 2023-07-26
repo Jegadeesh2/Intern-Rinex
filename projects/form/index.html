@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="submit">
+        <h2>College Admission Form</h2>
+        <label for="name"> Name </label>
+        <input
+          type="text"
+          class="input-text"
+          placeholder="Enter Name.."
+          required
+        />
+        <label for="email"> Email </label>
+        <input type="email" class="input-text" placeholder="Enter Email.." />
+        <label for="mobile"> Mobile No. </label>
+        <input
+          type="number"
+          class="input-text"
+          placeholder="Enter Mobile no.."
+        />
+        <label for="dob">DOB : </label>
+        <input type="date" class="input-date" />
+        <label for="courses">Courses</label>
+        <select name="courses" id="courses">
+          <option value="CSE">Computer Science</option>
+          <option value="mech">Mechanical</option>
+          <option value="civil">Civil</option>
+          <option value="EEE">Electrical & Electronic Engineering</option>
+          <option value="ECE">Electronics & Communication Engineering</option>
+        </select>
+        <label for="address">Address</label>
+        <textarea name="address"></textarea>
+        <textarea name="add" id="" cols="30" rows="10"></textarea>
+        <label for="gender">Gender</label>
+        <div class="gender-buttons">
+          <span>
+            <input type="radio" name="gender" />
+            Male</span
+          ><br />
+          <input type="radio" name="gender" />
+          <span>Female</span><br />
+          <input type="radio" name="gender" />
+          <span>Prefer Not To Mention</span>
+        </div>
+        <br />
+        <div>
+          <input type="checkbox" name="checkbox" />
+          <span>Accept Terms & Services</span>
+        </div>
+        <br />
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
