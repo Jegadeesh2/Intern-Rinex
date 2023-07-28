@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --white-clr: rgb(255, 255, 255);
+  --black-clr: rgb(0, 0, 0);
+  --primary-clr: rgb(181, 181, 255);
+  --secondary-clr: rgb(130, 130, 255);
+  --blue-clr: rgb(40, 40, 254);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+h1{
+  margin: 0;
+}
+
+.year{
+  text-decoration: underline;
+}
+
+.container-one {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-color: var(--primary-clr);
+}
+
+.about-container{
+  margin: auto;
+  width: 90%;
+  background-color: var(--secondary-clr);
+}
+
+.about{
+  padding: 1.5rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.about-image{
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+}
+
+.slogan{
+  margin: 1.5rem auto auto auto;
+  width: fit-content;
+  padding: 8px 15px;
+  font-style: italic;
+  font-weight: 500;
+  background-color: var(--blue-clr);
+}
+
+.container-two{
+  background-color: var(--secondary-clr);
+  margin: 0;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+h3{
+  margin: auto;
+  font-size: 22px;
+}
+
+ul{
+  margin: auto;
+}
+
+.timeline{
+width: 50%;
+padding: 2rem 2rem 0px 2rem;
+margin: auto;
+font-size: 17px;
+}
+
+li{
+  font-weight: 600;
+}
+
+.wikipedia-link{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+footer{
+background-color: var(--blue-clr);
+padding: 10px;
+text-align: center;
+font-size: 15px;
+font-weight: 600;
+font-style: italic;
+}
