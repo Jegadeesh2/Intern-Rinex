@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-body {
-  font-family: "poppins", sans-serif;
-  background-color: var(--bg-clr);
-  margin: 0;
-}
-
 :root {
   --bg-clr: rgb(200, 253, 253);
   --white-clr: rgb(255, 255, 255);
@@ -21,6 +15,12 @@ body {
   --sky-blue: rgb(135, 206, 235);
   --light-green: rgb(133, 250, 133);
   --dark-pink: rgb(255, 110, 134);
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--bg-clr);
+  margin: 0;
 }
 
 h1 {
@@ -97,7 +97,8 @@ p {
 }
 
 .fact-inner-block {
-  margin: 50px;
+  margin: 50px auto;
+  width: 80%;
   padding: 10px;
   border: 5px solid var(--cate-blue);
   background-color: var(--light-orange);
@@ -106,7 +107,8 @@ p {
 .fact-block-one {
   border-top: 3px solid var(--green-clr);
   border-bottom: 3px solid var(--green-clr);
-  margin: 50px;
+  margin: 50px auto;
+  width: 80%;
   padding: 20px;
   font-size: 24px;
   font-weight: 700;
@@ -116,7 +118,8 @@ p {
 }
 
 .fact-block-two {
-  margin: 50px;
+  margin: 50px auto;
+  width: 80%;
   padding: 20px;
   font-size: 22px;
   font-weight: 700;
@@ -133,20 +136,23 @@ p {
 }
 
 .quote-in-one {
-  margin: 30px 50px;
+  margin: 30px auto;
+  width: 80%;
   padding: 10px;
   border: 5px solid var(--orange-clr);
   background-color: var(--light-orange);
 }
 
 .quote-in-two {
-  margin: 30px 50px;
+  margin: 30px auto;
+  width: 80%;
   padding: 10px;
   border: 5px solid var(--green-clr);
   background-color: var(--light-green);
 }
 .quote-in-three {
-  margin: 30px 50px;
+  margin: 30px auto;
+  width: 80%;
   font-size: 22px;
   font-weight: 700;
   font-style: italic;
