@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --white-clr: rgb(255, 255, 255);
+  --black-clr: rgb(0, 0, 0);
+  --grey-clr: rgb(110, 110, 110);
+}
+
+.bg-image {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.nature {
+  background-image: url("nature.jpeg");
+  height: 700px;
+}
+
+.flag {
+  background-image: url("flag.webp");
+  height: 500px;
+}
+
+.taj-mahal {
+  background-image: url("taj-mahal.jpeg");
+  height: 500px;
+}
+
+.highlight-bg {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  text-align: center;
+}
+
+.highlight-txt {
+  background-color: var(--black-clr);
+  color: var(--white-clr);
+  padding: 20px;
+  text-align: center;
+  font-size: 27px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  border-radius: 10px;
+}
+
+.img-txt-container {
+  font-size: 25px;
+  padding: 1.5rem;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.about-section {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--grey-clr);
+  color: var(--white-clr);
+  font-size: 16px;
+  line-height: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: var(--white-clr);
+  color: var(--black-clr);
+}
+
+@media screen and (max-width: 500px) {
+  .highlight-txt {
+    padding: 10px;
+    font-size: 16px;
+    letter-spacing: 5px;
+  }
+}
