@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Pacifico&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --white-clr: rgb(255, 255, 255);
+  --black-clr: rgb(0, 0, 0);
+  --blue-clr: rgb(0, 0, 255);
+  --light-blue: rgb(173, 216, 230);
+  --primary-clr: rgb(220, 246, 255);
+  --secondary-clr: rgb(114, 190, 215);
+}
+
+body {
+  background-color: var(--primary-clr);
+  margin: 0px;
+  font-family: "Abel", sans-serif;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  float: left;
+  padding-left: 30px;
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: var(--blue-clr);
+}
+
+.menu {
+  float: right;
+  list-style-type: none;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.menu li:hover {
+  background-color: var(--secondary-clr);
+  border-radius: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--black-clr);
+}
+
+.main-image {
+  clear: both;
+  background-image: url("hummus-roll.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  position: relative;
+  width: 100%;
+}
+
+.image-txt {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+  font-size: 20px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-style: italic;
+}
+
+.section-image {
+  flex: 0 1 30%;
+  height: 500px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.about {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.description {
+  flex: 0 1 30%;
+  margin: 20px;
+}
+.title {
+  text-align: center;
+}
+.food-items {
+  text-align: left;
+}
+
+h1,
+h3,
+h4 {
+  letter-spacing: 3px;
+}
+
+hr {
+  width: 80%;
+  text-align: center;
+  border: 0;
+  border-top: 1px solid var(--blue-clr);
+}
+
+.contact {
+  width: 1000px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-style: italic;
+}
+
+input {
+  width: 80%;
+  border: 0;
+  box-shadow: 2px 2px 5px var(--secondary-clr);
+  margin: 10px;
+  padding: 10px;
+}
+
+.submit-btn {
+  border-radius: 10px;
+  background-color: var(--secondary-clr);
+  box-shadow: none;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--light-blue);
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .description {
+    flex: 0 1 80%;
+  }
+  section {
+    margin: 20px;
+  }
+  .contact {
+    width: 80%;
+    text-align: justify;
+    margin: 40px;
+  }
+}
