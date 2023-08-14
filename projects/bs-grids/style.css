@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navbar-collapse {
+  justify-content: right;
+}
+
+header {
+  padding: 1.5rem 3rem;
+}
+
+.sale-poster {
+  height: 85vh;
+  width: 100%;
+}
+
+.cards-container {
+  padding: 2rem 0;
+}
+
+.single-card {
+  background-color: rgb(255, 194, 82);
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.card-image {
+  height: 18rem;
+  border-radius: 7px;
+  width: -webkit-fill-available;
+}
+
+.description {
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-footer {
+  padding: 1rem;
+  background-color: rgb(255, 204, 110);
+  text-align: center;
+}
