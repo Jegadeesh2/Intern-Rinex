@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+    <style>
+      .main-container {
+        width: 600px;
+        height: 600px;
+        position: relative;
+        margin: 50px auto;
+        border: 5px solid rgb(255, 0, 0);
+      }
+
+      .square-container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        margin: 100px auto;
+        border: 5px solid rgb(255, 0, 0);
+      }
+      .moving-box-large {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(0,0,0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: moving-box-large 5s linear infinite; 
+      }
+
+      .moving-box-small {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(0,0,0);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        animation: moving-box-small 3s linear infinite; 
+      }
+
+      .rotating-box {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: purple;
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        transform: translate(-55%, -55%);
+        animation: rotateBox 1s linear infinite;
+      }
+
+      @keyframes rotateBox {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes moving-box-large {
+        0% {
+          top: 0;
+          left: 0;
+        }
+        25% {
+          top: 0;
+          left: 300px;
+          background-color: rgb(0, 0, 255);
+        }
+        50% {
+          top: 300px;
+          left: 300px;
+          background-color: rgb(0, 128, 0);
+        }
+        75% {
+          top: 300px;
+          left: 0;
+          background-color: rgb(226, 43, 43);
+        }
+        100% {
+          top: 0;
+          left: 0;
+        }
+      }
+      @keyframes moving-box-small {
+        0% {
+          bottom: 0;
+          left: 0;
+        }
+        25% {
+          bottom: 0;
+          left: 550px;
+          background-color: rgb(0, 0, 255);
+        }
+        50% {
+          bottom: 550px;
+          left: 550px;
+          background-color: rgb(0, 128, 0);
+        }
+        75% {
+          bottom: 550px;
+          left: 0;
+          background-color: rgb(226, 43, 43);
+        }
+        100% {
+          bottom: 0;
+          left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="square-container">
+        <div class="rotating-box"></div>
+        <div class="moving-box-large"></div>
+      </div>
+      <div class="moving-box-small"></div>
+    </div>
+  </body>
+</html>
