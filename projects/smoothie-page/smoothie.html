@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smoothies</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ae3f6753f4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarResponsive"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Veggies & Health</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a href="#" id="dropdownMenuLink" data-toggle="dropdown">
+                Menu
+                <i class="fas fa-caret-down"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Green Smoothies</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Connect</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--- Carousel -->
+    <div
+      id="slides"
+      class="carousel slide"
+      data-ride="carousel"
+      data-interval="10000"
+    >
+      <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/image1.jpg" />
+          <h1 class="display-1">Sip. Savor. Smile...</h1>
+        </div>
+        <div class="carousel-item">
+          <img src="images/image2.jpg" />
+          <div class="carousel-caption">
+            <h1 class="display-2">GREEN SMOOTHIES</h1>
+            <h3 class="display-2-desc">Made with Fresh Fruits And Veggies</h3>
+            <button type="button" class="btn btn-outline-light btn-lg">
+              SHOP NOW
+            </button>
+            <button type="button" class="btn btn-outline-light btn-lg">
+              KNOW MORE
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/image3.jpg" />
+          <div class="carousel-caption">
+            <h1 class="display-3">SUMMER SMOOTHIES</h1>
+            <h3 class="display-3-desc">Made with Fresh Fruits And Veggies</h3>
+            <button type="button" class="btn btn-outline-light btn-lg">
+              SHOP NOW
+            </button>
+            <button type="button" class="btn btn-outline-light btn-lg">
+              KNOW MORE
+            </button>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#slides" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#slides" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+    <div class="slider-footer">
+      <a href="#" class="order-btn"> Order </a>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua tempor
+        incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+        do eiusmod tempor incididunt.
+      </p>
+    </div>
+
+    <!-- Icons section -->
+    <div class="section">
+      <div class="section-heading text-align">Freshly Made Smoothies</div>
+      <p class="some-txt text-align">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua tempor incididunt.
+      </p>
+
+      <div class="icons-section">
+        <div class="icon">
+          <i class="fas fa-carrot carrot-icon"></i>
+          <h3>Fruits & Veggies</h3>
+        </div>
+        <div class="icon">
+          <i class="fas fa-hand-holding-heart heart-icon"></i>
+          <h3>Healthy Smoothies</h3>
+        </div>
+        <div class="icon">
+          <i class="fas fa-coins coin-icon"></i>
+          <h3>Affordable</h3>
+        </div>
+      </div>
+    </div>
+    <hr class="hr-purple" />
+
+    <!-- About section (Diet)-->
+    <div class="section about-section">
+      <div class="content-block">
+        <h2>Healthy Diet helps you ....</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue
+          lacus viverra vitae congue eu consequat ac. Velit dignissim sodales ut
+          eu sem. Tempus imperdiet nulla malesuada pellentesque elit eget
+          gravida. Ipsum a arcu cursus vitae. Velit laoreet id donec ultrices
+          tincidunt. Risus sed vulputate odio ut enim. Quisque non tellus orci
+          ac auctor augue mauris augue. Scelerisque viverra mauris in aliquam.
+          Lobortis mattis aliquam faucibus purus.
+        </p>
+        <a href="#" class="know-more-btn"> KNOW MORE</a>
+      </div>
+      <div class="image-block">
+        <img
+          src="https://media.istockphoto.com/id/1154973292/photo/fresh-mango-smoothie-with-mango-fruits.jpg?s=612x612&w=0&k=20&c=TPUIATbB7LX-xrS2yGuwPqjFdvRK2-92QSEY_abRz4I="
+          width="600"
+          height="450"
+          class="image-border1"
+        />
+      </div>
+    </div>
+
+    <!--- Emoji Section -->
+    <button class="fun-btn" data-toggle="collapse" data-target="#emoji">
+      Click for Fun
+    </button>
+    <div id="emoji" class="collapse">
+      <div class="emoji-section">
+        <div class="emoji-gifs">
+          <img src="gifs/apple.gif" width="300" height="200" />
+        </div>
+        <div class="emoji-gifs">
+          <img src="gifs/green.gif" width="300" height="200" />
+        </div>
+        <div class="emoji-gifs">
+          <img src="gifs/carrot.gif" width="300" height="200" />
+        </div>
+        <div class="emoji-gifs">
+          <img src="gifs/cucumber.gif" width="300" height="200" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Smoothie gallery -->
+    <div class="section">
+      <div class="section-heading text-align">Popular Choices</div>
+      <div class="about-section gallery">
+        <div class="gallery-image">
+          <img
+            src="https://media.istockphoto.com/id/626075926/photo/blueberry-smoothie-with-banana-and-oat-flakes.jpg?s=612x612&w=0&k=20&c=seoExGscdyGIpX7DYg0oTSJBtpeeXtTVpDnf11n2qqU="
+            width="450"
+            height="300"
+          />
+          <h3 style="padding-top: 30px">BlueBerry-Banana Smoothie</h3>
+        </div>
+        <div class="gallery-image">
+          <img
+            src="https://media.istockphoto.com/id/859307928/photo/freshly-squeezed-pineapple-lemon-and-ginger-juice.jpg?s=612x612&w=0&k=20&c=xk8R2SlT1bTbxr0ZE46HHLkVEDGeeXH87J4emWXtzEA="
+            width="450"
+            height="300"
+          />
+          <h3 style="padding-top: 30px">Lime-Pine Smoothie</h3>
+        </div>
+        <div class="gallery-image">
+          <img
+            src="https://media.istockphoto.com/id/1556754465/photo/green-smoothie-with-kiwi-pineapple-and-chlorella.jpg?s=612x612&w=0&k=20&c=Fh5O0BPmUpcnfhVYZwEqfbZplDhuRZsT5HFh4ly3TTs="
+            width="450"
+            height="300"
+          />
+          <h3 style="padding-top: 30px">Kiwi-Mint Smoothie</h3>
+        </div>
+      </div>
+    </div>
+    <!-- About section (Philosophy) -->
+    <div class="section about-section">
+      <div class="content-block">
+        <h2>Our Philosophy...</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue
+          lacus viverra vitae congue eu consequat ac. Velit dignissim sodales ut
+          eu sem. Tempus imperdiet nulla malesuada pellentesque elit eget
+          gravida. Ipsum a arcu cursus vitae. Velit laoreet id donec ultrices
+          tincidunt. Risus sed vulputate odio ut enim. Quisque non tellus orci
+          ac auctor augue mauris augue. Scelerisque viverra mauris in aliquam.
+          Lobortis mattis aliquam faucibus purus.
+        </p>
+        <a href="#" class="know-more-btn">Know More</a>
+      </div>
+      <div class="image-block">
+        <img
+          src="https://media.istockphoto.com/id/503704970/photo/fresh-fruit-smoothies.jpg?s=612x612&w=0&k=20&c=lbhlRB41vLqRDNxXJfOFU79Rb2Tje4h0WeQMSDln_yY="
+          width="600"
+          height="400"
+          class="image-border2"
+        />
+      </div>
+    </div>
+    <hr class="hr-purple" />
+    
+    <!--- Connect Icons -->
+    <div class="section">
+      <div class="section-heading text-align">Connect with us</div>
+      <div class="social-links">
+        <div class="icon">
+          <i class="fab fa-facebook fb"></i>
+        </div>
+        <div class="icon">
+          <i class="fab fa-twitter tweet"></i>
+        </div>
+        <div class="icon">
+          <i class="fab fa-google-plus-g gp"></i>
+        </div>
+        <div class="icon">
+          <i class="fab fa-instagram-square ins"></i>
+        </div>
+        <div class="icon">
+          <i class="fab fa-youtube yt"></i>
+        </div>
+      </div>
+    </div>
+    <!--- Footer -->
+    <footer>
+      <div class="section footer-section">
+        <div class="footer-block">
+          <img src="images/logo.png" />
+          <hr class="hr-purple" />
+          <p>555-666-7777</p>
+          <p>smoothies@myemail.com</p>
+          <p>100 Street Name</p>
+          <p>City, State, 00000</p>
+        </div>
+        <div class="footer-block">
+          <hr class="hr-purple" />
+          <h5>Our Hours</h5>
+          <hr class="hr-purple" />
+          <p>Monday: 9am - 5 pm</p>
+          <p>Saturday: 10 am - 4 pm</p>
+          <p>Sunday: Closed</p>
+        </div>
+        <div class="footer-block">
+          <hr class="hr-purple" />
+          <h5>Service Area</h5>
+          <hr class="hr-purple" />
+          <p>City, State,00000</p>
+          <p>City, State,00000</p>
+          <p>City, State,00000</p>
+        </div>
+        <div>
+          <hr class="hr-purple" />
+          <h5>&copy; www.CodingSteps.in</h5>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
