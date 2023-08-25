@@ -1,14 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS-Assignments</title>
-  <style>
-    
-  </style>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-Assignments</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Assignment one -->
+      <div class="section">
+        <h2>Assignment One</h2>
+        <label for="fahrenheit" class="label"
+          >Enter temperature in Fahrenheit: </label
+        ><br />
+        <input
+          type="number"
+          id="fahrenheit"
+          class="input-field"
+          placeholder="Enter number.."
+        />
+        <br />
+        <button onclick="convertTemperature()" class="btn">Convert</button>
+        <div class="result-container">
+          <p id="fahrenheit-result"></p>
+        </div>
+      </div>
+      <hr />
+
+      <!-- Assignment Two -->
+      <div class="section">
+        <h2>Assignment Two</h2>
+        <p id="count-result" class="count">0</p>
+        <button onclick="increase()" class="btn">+</button>
+        <button onclick="reset()" class="btn">Reset</button>
+        <button onclick="decrease()" class="btn">-</button>
+        <div class="result-container"></div>
+      </div>
+      <hr />
+
+      <!--Assignment Three -->
+      <div class="section">
+        <h2>Assignment Three</h2>
+        <label for="string-input" class="label"
+          >Enter Any text to convert :</label
+        >
+        <br />
+        <input
+          type="text"
+          id="string-input"
+          class="input-field"
+          placeholder="Enter text.."
+        />
+        <br />
+        <button onclick="convertToCapitalCase()" class="btn">
+          Capital Case
+        </button>
+        <button onclick="convertToUpperCase()" class="btn">Uppercase</button>
+        <button onclick="convertToLowerCase()" class="btn">Lowercase</button>
+        <div class="result-container">
+          <p id="case-converted-result"></p>
+        </div>
+      </div>
+      <hr />
+      <!--Assignment Four -->
+
+      <div class="section">
+        <h2>Assignment Four</h2>
+        <form>
+          <label for="string-input" class="label">Enter Your Age : </label>
+          <input
+            type="number"
+            id="age-input"
+            class="input-field"
+            placeholder="Enter age.."
+            required
+          />
+          <br />
+          <p style="font-size: 20px; font-weight: 500">
+            Are You accompanied by 13 years adult ?
+          </p>
+          <input type="radio" name="accompany" id="accompanied" value="yes" />
+          <label for="yes" class="label">Yes</label> <br />
+          <input type="radio" name="accompany" id="unaccompanied" value="no" />
+          <label for="no" class="label">No</label> <br />
+          <button type="submit" onclick="entryCheck(event)" class="btn">
+            Book Ticket
+          </button>
+          <div class="result-container">
+            <p id="entry-result"></p>
+          </div>
+        </form>
+      </div>
+      <hr />
+      <!--Assignment Five -->
+      <div class="section">
+        <h2>Assignment Five</h2>
+        <label for="console" class="label"
+          >Please, check the console for this Assignment.</label
+        >
+      </div>
+      <hr />
+
+      <!-- Assignment six -->
+      <div class="section">
+        <h2>Assignment One</h2>
+        <label for="operand-one" class="label">Operand One : </label>
+        <input
+          type="number"
+          id="operand-one"
+          class="input-field"
+          placeholder="Enter number.."
+          required
+        />
+        <br />
+        <label for="operator" class="label">Enter operator : </label>
+        <input
+          type="text"
+          id="operator"
+          class="input-field"
+          placeholder="Enter +, -, *, /.."
+        />
+        <br />
+        <label for="operand-two" class="label"> Operand Two : </label>
+        <input
+          type="number"
+          id="operand-two"
+          class="input-field"
+          placeholder="Enter number.."
+          required
+        />
+        <br />
+        <button type="submit" onclick="calculate(event)" class="btn">
+          Convert
+        </button>
+        <div class="result-container">
+          <p id="calculation-result"></p>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <script src="js-assignments.js"></script>
+  </body>
 </html>
