@@ -1,0 +1,106 @@
+/* global */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+:root {
+  --headings: rgb(255, 255, 255);
+  --text: rgb(179, 177, 177);
+  --bg: rgb(16, 18, 20);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+i {
+  color: var(--headings);
+}
+
+h2 {
+  color: var(--headings);
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+/* section 1 */
+.section-1 {
+  padding-top: 40vh;
+  text-align: center;
+}
+
+.section-1 p {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.section-1 h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.section-1 a {
+  color: var(--text);
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+/* section 2 */
+.section-2 {
+  padding-top: 5vh;
+  width: 70%;
+}
+
+.section-2 h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.section-2 p {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.section-2 a {
+  display: block;
+  color: var(--text);
+  padding: 5px;
+  font-size: 1.2rem;
+  font-weight: 100;
+  padding-left: 0;
+  width: 300px;
+}
+
+/* animations */
+.section-2 a:hover {
+  font-size: 1.3rem;
+  color: var(--headings);
+  cursor: pointer;
+}
+
+.section-1 i:hover {
+  color: var(--headings);
+  cursor: pointer;
+  scale: 1.2;
+}
+
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .section-2 {
+    margin: auto;
+  }
+}
