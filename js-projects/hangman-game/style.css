@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-clr: white;
+  --black-clr: black;
+  --red-clr: red;
+  --blue-clr: blue;
+  --primary-clr: rgb(1, 6, 92);
+  --secondary-clr: rgb(37, 145, 251);
+}
+
+.container {
+  margin: 0;
+  background-image: radial-gradient(
+    circle farthest-corner at 50% 50%,
+    rgb(1, 6, 92) 10.2%,
+    rgb(37, 145, 251) 90.8%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: var(--white-clr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  color: var(--red-clr);
+}
+
+#word-display {
+  font-size: 24px;
+  margin: 20px 0;
+  color: var(--secondary-clr);
+}
+
+#attempts-left {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: var(--red-clr);
+}
+
+#guess-input {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 7px;
+  border: 2px solid var(--secondary-clr);
+  padding: 5px 15px;
+  margin-right: 10px;
+}
+
+#guess-button {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 2px;
+  padding: 5px 10px;
+  background-color: var(--blue-clr);
+  color: var(--white-clr);
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#guess-button:hover {
+  background-color: var(--secondary-clr);
+}
+
+#guess-button:active {
+  scale: 0.9;
+}
+
+#message {
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 10px;
+}
