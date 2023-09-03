@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JS Assignments_2</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Assignment Seven -->
+      <!-- Program one -->
+      <div class="section">
+        <h2>Assignment Seven</h2>
+        <h3>Masked String</h3>
+        <label for="mask-string" class="label">Enter a string to mask: </label
+        ><br />
+        <input
+          type="text"
+          id="mask-string"
+          class="input-field"
+          placeholder="Enter a word"
+        />
+        <br />
+        <button onclick="maskString()" class="btn">Convert</button>
+        <div class="result-container">
+          <p id="mask-string-result"></p>
+        </div>
+      </div>
+      <hr />
+      <!-- Program two -->
+      <div class="section">
+        <h3>Generate Multiplication table</h3>
+        <label for="rows" class="label">Enter the number of rows : </label>
+        <input type="number" id="rows" min="1" max="10" class="input-field" />
+        <br />
+        <label for="columns" class="label"
+          >Enter the number of columns :
+        </label>
+        <input
+          type="number"
+          id="columns"
+          min="1"
+          max="10"
+          class="input-field"
+        />
+        <br />
+        <button id="generate-btn" class="btn">Generate Table</button>
+        <div id="multiplication-table"></div>
+      </div>
+      <hr />
+      <!-- Program three -->
+      <div class="section">
+        <h3>Double the number</h3>
+        <label for="rows" class="label">Enter the number to double : </label>
+        <input type="number" id="num" class="input-field" />
+        <br />
+        <button id="double-btn" class="btn">Double</button>
+        <div class="result-container">
+          <div id="doubled-result"></div>
+        </div>
+      </div>
+      <hr />
+      <!-- Assignment Eight -->
+      <!-- Program one -->
+      <div class="section">
+        <h2>Assignment Eight</h2>
+        <h3>Pattern triangle Generator</h3>
+        <label for="triangle-start-value" class="label">Start Value : </label>
+        <input
+          type="number"
+          id="triangle-start-value"
+          class="input-field"
+          placeholder="Enter a number"
+        />
+        <br />
+        <label for="triangle-end-value" class="label">End Value : </label>
+        <input
+          type="number"
+          id="triangle-end-value"
+          class="input-field"
+          placeholder="Enter a number"
+        />
+        <br />
+        <label for="triangle-char-value" class="label">Character : </label>
+        <input
+          type="text"
+          id="triangle-char-value"
+          class="input-field"
+          placeholder="Enter a word"
+          maxlength="1"
+        />
+        <br />
+        <button onclick="generateTriangle()" class="btn">
+          Generate Triangle
+        </button>
+        <div class="result-container">
+          <div id="triangle-result"></div>
+        </div>
+      </div>
+      <hr />
+      <!-- Program Two -->
+      <div class="section">
+        <h3>Colored Text Generator</h3>
+        <label for="num-of-rows" class="label"
+          >Number of Rows (should be divisible by 3):</label
+        ><br />
+        <input
+          type="number"
+          id="num-of-rows"
+          class="input-field"
+          placeholder="Enter Number"
+          required
+        /><br />
+
+        <label for="color1" class="label">Enter the first color:</label><br />
+        <input
+          type="text"
+          id="color1"
+          class="input-field"
+          placeholder="Enter a color.."
+          required
+        /><br />
+
+        <label for="color2" class="label">Enter the second color:</label><br />
+        <input
+          type="text"
+          id="color2"
+          class="input-field"
+          placeholder="Enter a color.."
+          required
+        /><br />
+
+        <button onclick="coloredLetters()" class="btn">Create</button>
+        <div class="result-container">
+          <div id="colored-letters-result"></div>
+        </div>
+      </div>
+      <hr />
+      <!-- Assignment Nine -->
+      <div class="section">
+        <h2>Assignment Nine</h2>
+        <h3>Library-Management</h3>
+        <label for="book-title" class="label">Book Title : </label>
+        <input
+          type="text"
+          id="book-title"
+          class="input-field"
+          placeholder="Enter a book title..."
+        />
+        <br />
+        <button id="add-book" class="btn">Add Book</button>
+        <br />
+        <label for="search-book" class="label">Search for a book : </label>
+        <input
+          type="text"
+          id="search-book"
+          class="input-field"
+          placeholder="Enter a book name"
+        />
+        <br />
+        <div class="book-list">
+          <label for="available-books" class="label">
+            <em> List of available books </em>
+          </label>
+          <div id="available-books"></div>
+        </div>
+      </div>
+      <hr />
+      <div class="section">
+        <h2>Assignment Ten</h2>
+        <h3>Random Quote Generator</h3>
+        <div class="quote-container">
+          <label for="book-title" id="quote-text" class="label"
+            >Random Quote Goes Here
+          </label>
+          <br />
+          <em id="quote-author"></em>
+        </div>
+        <button id="new-quote-button" class="btn">New Quote</button>
+      </div>
+      <hr />
+    </div>
+    <script src="js-assignments2.js"></script>
+  </body>
+</html>
