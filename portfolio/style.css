@@ -109,7 +109,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.7rem 0;
+  margin: 1rem 0;
   box-shadow: var(--box-shadow-1);
 }
 .controls .control i {
@@ -374,7 +374,9 @@ section {
   flex: 2;
 }
 .contact-content-con .contact-section h4 {
+  text-align: center;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -541,7 +543,7 @@ section {
     background-color: var(--color-grey-5);
   }
   .controls .control {
-    margin: 1rem 0.3rem;
+    margin: 1rem 1rem;
   }
 
   .container {
